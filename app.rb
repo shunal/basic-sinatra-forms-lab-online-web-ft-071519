@@ -5,7 +5,7 @@ get '/newteam' do
     erb :newteam
   end
 
-  post '/newteam' do
+  post '/team' do
     original = params["string"]
     @answers = original
     erb :team
