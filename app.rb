@@ -2,13 +2,11 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
 get '/newteam' do
-    erb 
+    erb :newteam
   end
 
   post '/team' do
-    original_string = params["string"]
-    @reversed_string = original_string.reverse
-    erb :reversed
+    erb :team
   end
 
 end
