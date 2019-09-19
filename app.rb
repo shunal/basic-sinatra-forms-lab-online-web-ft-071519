@@ -6,8 +6,6 @@ get '/newteam' do
   end
 
   post '/team' do
-    original = params["string"]
-    
     @name = params["name"]
     @coach = params["coach"]
     @pg = params["pg"]
