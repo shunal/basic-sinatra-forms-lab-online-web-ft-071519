@@ -9,7 +9,7 @@ get '/newteam' do
     original = params["string"]
     @answers = original
     erb :team
-    binding.pry
+    
   end
 
 end
