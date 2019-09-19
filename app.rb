@@ -8,8 +8,8 @@ get '/newteam' do
   post '/newteam' do
     original = params["string"]
     @answers = original
-    binding.pry
     erb :team
+    binding.pry
   end
 
 end
